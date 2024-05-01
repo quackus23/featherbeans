@@ -1,2 +1,2 @@
 // List of categories for blog posts
-export const CATEGORIES = ['County Championship','Suffolk'] as const
+export const CATEGORIES = ['County Championship','Rachel Heyhoe Flint Trophy','Suffolk'] as const
