@@ -21,7 +21,8 @@ function buildToc(headings: TableOfContent[]) {
 		if (heading.depth === 1 || heading.depth === 2) {
 			toc.push(heading)
 		} else {
-			parentHeadings.get(heading.depth - 1).subheadings.push(heading)
+			if (parentHeadings.get(heading.depth - 1))
+				parentHeadings.get(heading.depth - 1).subheadings.push(heading)
 		}
 	})
 	return toc
